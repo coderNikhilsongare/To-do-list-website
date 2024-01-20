@@ -1,0 +1,72 @@
+
+body{
+    background-color: #424769;
+    height: 100vh;
+}
+.todo-app{
+    max-width: 500px;
+    background-color: white;
+    padding: 20px 30px 50px ;
+    margin: 120px auto 15px;
+    border-radius: 15px;
+}
+.todo-app h1{
+    text-align: center;
+}
+form{
+    display: flex;
+    align-items: center ;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+input[type="text"] {
+    width: 80%;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 15px;
+    font-size: 1rem;
+    margin-left: 10px;
+}
+button{
+    background-color: black;
+    color: white;
+    padding: 20px 30px ;
+    cursor: pointer;
+    border-radius: 15px;
+    font-size: 1.2rem;
+    border: none;
+}
+button:hover{
+    background-color: grey;
+}
+ul li{
+    list-style-type: none ;
+    font-size: 1.1rem;
+    padding: 10px 6px 10px 30px;
+    cursor: pointer;
+    position: relative;
+}
+ul li::before{
+    content: "☐";
+    position: absolute;
+    font-size: 25px;
+    left: -1px;
+    top: 4px;
+}
+#task-list{
+    padding: 0px 30px  ;
+}
+ul li.checked{
+    color:rgb(12, 33, 92) ;
+}
+ul li.checked::before{
+    content: "✓"; 
+    color:rgb(12, 33, 92) ;   
+}
+ul li span{
+    position: absolute;
+    top: 1.8px; 
+    right: 5px;
+    color: red;
+    font-size: 2rem;
+}
